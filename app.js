@@ -1,7 +1,15 @@
-function logger(a, ...rest){
-    console.log(a)
-
-    console.log(rest)
+function handleNumber(n) {
+  if (n === 2) {
+    return true;
+  } else if (n > 1) {
+    for (var i = 2; i < n; i++) {
+      if (n % i !== 0) {
+        return true;
+      } else {
+        return false;
+      }
+    }
+  } else {
+    return false;
+  }
 }
-
-logger([2, 4, 6, 8 ,9])
