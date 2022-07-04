@@ -26,5 +26,13 @@ function handleArr(arr) {
     }, 0) - newArr[0];
   return sumMax;
 }
+// function handleArr(arr) {
+//   const newArr = arr.sort((a, b) => a - b);
+//   const sumMin =
+//     newArr.reduce(function (acc, crr) {
+//       return acc + crr;
+//     }, 0) - newArr[4];
+//   return sumMin;
+// }
 
 console.log(handleArr(arrNumber));
